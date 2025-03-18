@@ -166,7 +166,7 @@ onMounted(() => {
           />
         </div>
       </div>
-        <Fotter class="top-[36rem] relative" />
+      <Fotter class="top-[36rem] relative" />
       <div
         v-if="storedStories.length <= 0"
         class="mt-16 flex justify-center text-gray-400 text-center"
@@ -191,6 +191,13 @@ div#pv_id_1 img {
   max-width: 100% !important;
   max-height: 100% !important;
   object-fit: cover;
+}
+@media only screen and (min-width: 768px) {
+  div#pv_id_1 img {
+    max-width: 35rem !important;
+    max-height: 35rem !important;
+    object-fit: cover;
+  }
 }
 
 .p-galleria-items {
